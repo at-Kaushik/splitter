@@ -1,0 +1,79 @@
+.left-section {
+    height: 330px;
+    margin: 25px;
+    flex: 1 1 160px;
+  }
+
+  .dollar-input {
+    background: #f3f8fc;
+    border: 0;
+    color: #00474b;
+    font-weight: bold;
+    font-size: 18px;
+    float: left;
+    text-align: right; 
+    height: 30px;
+    width: 100%;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+
+  .dollar-icon {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+  }
+  .tip-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hard-tip {
+    flex-basis: 30%;
+    background: #00474b;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius:2px;
+  }
+
+  .custom-tip {
+    width: 29%;
+    background-color: #c5e4e6;
+    font-weight: bold;
+    color: #00474b;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0;
+    margin: 3px;
+    text-align: center;
+    font-size:20px; 
+    border-radius:2px;
+  }
+  
+  .selectTip {
+    margin-top: 20%;
+    text-align: initial;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .number-of-people {
+    margin-top:12%;
+  }
+
+  .hard-tip:focus, .hard-tip:active {
+    background-color:#25c2ac
+  }
+
+  label {
+    float: left;
+    font-weight: bold;
+    color: gray;
+  }

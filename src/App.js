@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import InputSection from './components/InputSection';
+import OutputSection from './components/OutputSection';
+
 import './App.css';
+import Logo from './assets/logo.svg';
 
 function App() {
+
+  const [calculatedTip, setCalTip] = useState('');
+  const [totalAmt, setTotalAmt] = useState('');
+
+  const getTipAmount = (tip, total) => {
+    setCalTip(tip);
+    setTotalAmt(total)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-container">
+        <div className="inner-container">
+        <img src={ Logo } alt="logo" className="logo"/>
+          <div className=" splitter-container">
+            <InputSection acb={getTipAmount} />
+            <OutputSection calculatedTip={calculatedTip} totalAmt={totalAmt} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
